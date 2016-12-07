@@ -46,10 +46,11 @@ public class PlayerListener implements Listener {
 	}
 
 	/**
+	 * timeDilation
 	 * 
-	 * @param time
-	 * @param previousTimeStamp
-	 * @return
+	 * @param time	Time left of the permission.
+	 * @param previousTimeStamp Previous timestamp when last logged out.
+	 * @return Returns the dilation of time in seconds.
 	 */
 	private int timeDilation(Integer time, Long previousTimeStamp) {
 		return (int) (time - ((System.currentTimeMillis() - previousTimeStamp) / 100));
@@ -57,8 +58,11 @@ public class PlayerListener implements Listener {
 	}
 
 	/**
+	 * removePlayer
 	 * 
-	 * @param player
+	 * @param player Player To be acted on.
+	 * 
+	 * Player to be removed from active list and have their permissions and timing updated.
 	 */
 	public static void removePlayer (Player player) {
 
@@ -78,7 +82,9 @@ public class PlayerListener implements Listener {
 	}
 	
 	/**
+	 * removeAllPlayers
 	 * 
+	 * Removes all active players data from the server and properly saves it.
 	 */
 	public static void removeAllPlayers() {
 		for (Player player: Bukkit.getServer().getOnlinePlayers()) {
