@@ -2,10 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/PermissionsEx.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/PermissionsEx-1.23.x.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/playerinfo-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/Spigot API.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/spigot.jar" sourcepath="C:/Users/Kiro/Desktop/Development/MC/ChosenCrap/Plugins/Spigot API.zip"/>
+	<classpathentry kind="lib" path="Resources/API.rar"/>
+	<classpathentry kind="lib" path="Resources/PermissionsEx-1.23.x.zip"/>
+	<classpathentry kind="lib" path="Resources/PermissionsEx.jar" sourcepath="Resources/PermissionsEx-1.23.x.zip"/>
+	<classpathentry kind="lib" path="Resources/playerinfo-1.0.jar"/>
+	<classpathentry kind="lib" path="Resources/Spigot API.zip"/>
+	<classpathentry kind="lib" path="Resources/spigot.jar"/>
+	<classpathentry kind="lib" path="Resources/Vault.jar"/>
+	<classpathentry kind="lib" path="Resources/ViaVersion-1.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

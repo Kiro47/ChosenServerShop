@@ -4,6 +4,7 @@ package com.chosencraft.purefocus.shops;
 	  slot#:
 	    title: Item Title
 	    description: Item Description
+	    time: Time for it to last in seconds. ( can handle up to 68 years worth )
 	    display:
 	      type: Material
 	      data: default 0

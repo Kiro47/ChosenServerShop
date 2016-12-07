@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.chosencraft.kiro.files.PlayerListener;
 import com.chosencraft.purefocus.shops.menu.MenuListener;
 import com.chosencraft.purefocus.shops.menu.ShopMenu;
 
@@ -20,11 +21,13 @@ public class ServerShops
 		getCommand("servershop").setExecutor(new ServerShopCommand());
 
 		getServer().getPluginManager().registerEvents(new MenuListener(), this);
+		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 	}
 
 	public void onDisable()
 	{
 		menu = null;
+		PlayerListener.removeAllPlayers();
 	}
 
 	public static void reload()
